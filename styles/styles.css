@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 400px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.container #result {
+    width: 100%;
+    height: 150px;
+    color: white;
+    background-color: #404040;
+    font-size: 20px;
+    position: relative;
+}
+
+.container #result #res-text {
+    position: absolute;
+    right: 10px;
+    bottom: 3px;
+}
+
+.container #buttons {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container #buttons button:first-of-type {
+    width: 50%
+}
+
+.container #buttons button {
+    width: 25%;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #3F3F3F;
+    outline: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container #buttons .operator,
+.container #buttons #equal {
+    font-weight: bold;
+    background-color: #F68511;
+    color: white;
+    outline: none;
+}
+
+.container #buttons button[value='0'] {
+    width: 50%
+}
